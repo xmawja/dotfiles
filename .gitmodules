@@ -1,0 +1,3 @@
+[submodule ".config/.config/suckless/dwm"]
+	path = .config/.config/suckless/dwm
+	url = git@gitlab.com:mujalab/fundwm.git
