@@ -15,6 +15,8 @@ alias mp='for f in *.mp3 ; do ffplay -nodisp -autoexit "$f"; done'
 # open emacs in terminal mode
 alias emacs='emacs -nw'
 
+# random color script 
+colorscript random
 
 # starship enable bash
 eval "$(starship init bash)"
