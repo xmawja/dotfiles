@@ -4,3 +4,6 @@
 [submodule ".config/suckless/funstat"]
 	path = .config/suckless/funstat
 	url = git@github.com:mujalab/funstat.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:mujalab/funvim.git
