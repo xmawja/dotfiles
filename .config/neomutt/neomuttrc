@@ -1,0 +1,16 @@
+# vim: filetype=muttrc
+
+source $HOME/.config/neomutt/config/settings
+source $HOME/.config/neomutt/config/colors
+source $HOME/.config/neomutt/config/mappings
+
+# Accounts
+
+source $HOME/.config/neomutt/accounts/gmail
+folder-hook $folder 'source $HOME/.config/neomutt/accounts/gmail'
+
+source $HOME/.config/neomutt/accounts/school
+folder-hook $folder 'source $HOME/.config/neomutt/accounts/school'
+
+source $HOME/.config/neomutt/accounts/main
+folder-hook $folder 'source $HOME/.config/neomutt/accounts/main'
