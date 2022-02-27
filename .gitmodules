@@ -3,4 +3,4 @@
 	url = git@github.com:mujalab/funwm.git
 [submodule ".config/suckless/funstat"]
 	path = .config/suckless/funstat
-	url = git@github.com:mujalab/funvim.git
+	url = git@github.com:mujalab/funstat.git
