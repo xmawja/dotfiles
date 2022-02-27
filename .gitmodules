@@ -1,3 +1,15 @@
 [submodule ".config/.config/suckless/dwm"]
 	path = .config/.config/suckless/dwm
 	url = https://github.com/mujalab/funwm.git
+[submodule ".config/suckless/.config/suckless/funstat"]
+	path = .config/suckless/.config/suckless/funstat
+	url = git@github.com:mujalab/funvim.git
+[submodule ".config/suckless/.config/suckless/funwm"]
+	path = .config/suckless/.config/suckless/funwm
+	url = git@github.com:mujalab/funwm.git
+[submodule ".config/suckless/funwm"]
+	path = .config/suckless/funwm
+	url = git@github.com:mujalab/funwm.git
+[submodule ".config/suckless/funstat"]
+	path = .config/suckless/funstat
+	url = git@github.com:mujalab/funvim.git
