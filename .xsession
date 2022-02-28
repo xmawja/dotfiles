@@ -27,12 +27,14 @@ xrdb -merge $HOME/.Xresources
 # launch emacs.
 #exec dbus-launch --exit-with-session emacs
 
-# feh background
-~/.fehbg &
-
 # picom compositor
 picom &
-
+# slstatus bar
+slstatus &
+# feh background
+~/.fehbg &
+# dwm status bar script
+~/.config/suckless/dwm-bar/dwm_bar.sh &
 # window manager
 exec dbus-launch --exit-with-session dwm
 
