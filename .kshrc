@@ -31,6 +31,8 @@ alias config='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias mp='for f in *.mp3 ; do ffplay -nodisp -autoexit "$f"; done'
 # open emacs in terminal mode
 alias emacs='emacs -nw'
+# transmission remote
+alias tsm="transmission-remote"
 alias ls="$LS -FHh"
 alias ll='ls -l'
 alias la='ls -lA'
@@ -39,8 +41,11 @@ alias ...='cd ...'
 alias mkdir='mkdir -p'
 alias df='df -h'
 alias du='du -ch'
-alias weather='curl http://wttr.in/New_York'
+alias weather='curl http://wttr.in/Paris'
 command -v neomutt > /dev/null && alias mutt='neomutt'
+# neovim text editor
+alias v="nvim"
+alias vim="nvim"
 alias svim="doas vim"
 alias svi="doas vi"
 
