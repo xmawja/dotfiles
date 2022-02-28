@@ -27,6 +27,8 @@ xrdb -merge $HOME/.Xresources
 # launch emacs.
 #exec dbus-launch --exit-with-session emacs
 
+# transmission daemon
+transmission-daemon &
 # picom compositor
 picom &
 # slstatus bar
