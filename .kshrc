@@ -33,6 +33,11 @@ alias mp='for f in *.mp3 ; do ffplay -nodisp -autoexit "$f"; done'
 alias emacs='emacs -nw'
 # transmission remote
 alias tsm="transmission-remote"
+# neovim text editor
+alias v="nvim"
+alias vim="nvim"
+alias svim="doas vim"
+alias svi="doas vi"
 alias ls="$LS -FHh"
 alias ll='ls -l'
 alias la='ls -lA'
@@ -43,11 +48,9 @@ alias df='df -h'
 alias du='du -ch'
 alias weather='curl http://wttr.in/Paris'
 command -v neomutt > /dev/null && alias mutt='neomutt'
-# neovim text editor
-alias v="nvim"
-alias vim="nvim"
-alias svim="doas vim"
-alias svi="doas vi"
+
+# lf icons file manager script
+. ~/.config/lf/lficons.sh
 
 # nice colored prompt that also sets xterm title
 _XTERM_TITLE='\[\033]0;\u@\h:\w\007\]'
