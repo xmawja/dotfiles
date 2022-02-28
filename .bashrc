@@ -9,7 +9,7 @@ PS1='[\u@\h \W]\$ '
 
 ###### ALIASIS 
 # git bare dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # ffplay Music and Video Player
 alias mp='for f in *.mp3 ; do ffplay -nodisp -autoexit "$f"; done'
 # open emacs in terminal mode
