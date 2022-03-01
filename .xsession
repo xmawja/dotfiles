@@ -31,12 +31,12 @@ xrdb -merge $HOME/.Xresources
 transmission-daemon &
 # picom compositor
 picom &
-# slstatus bar
-slstatus &
 # feh background
 ~/.fehbg &
+# slstatus bar
+slstatus &
 # dwm status bar script
-~/.config/suckless/dwm-bar/dwm_bar.sh &
+#~/.config/suckless/dwm-bar/dwm_bar.sh &
 # window manager
 exec dbus-launch --exit-with-session dwm
 
