@@ -16,7 +16,8 @@ HISTSIZE=20000
 
 # emacs mode gives you the familiar Ctrl-A, Ctrl-E, etc
 set -o emacs
-
+# doom emacs path
+export PATH=$PATH:$HOME/.emacs.d/bin
 # use colorls if it's installed, plain old ls otherwise
 if command -v colorls > /dev/null ; then
   LS='colorls'
