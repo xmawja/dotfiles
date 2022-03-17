@@ -14,6 +14,8 @@ alias config='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias mp='for f in *.mp3 ; do ffplay -nodisp -autoexit "$f"; done'
 # open emacs in terminal mode
 alias emacs='emacs -nw'
+# gcc compiler
+alias ggc='gcc -Wall -Wextra -Werror'
 
 # random color script 
 colorscript random
