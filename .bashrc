@@ -25,3 +25,6 @@ eval "$(starship init bash)"
 
 # Rust Languge Package Manager
 . "$HOME/.cargo/env"
+
+# Deno runtime for JavaScript and TypeScript. 
+. "$HOME/.deno/bin/deno"
