@@ -13,3 +13,4 @@ alias config='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias emacs='emacs -nw'
 # gcc compiler
 alias ggc='gcc -Wall -Wextra -Werror'
+
