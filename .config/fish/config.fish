@@ -14,3 +14,5 @@ alias emacs='emacs -nw'
 # gcc compiler
 alias ggc='gcc -Wall -Wextra -Werror'
 
+# opam configuration
+source /usr/home/muja/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
