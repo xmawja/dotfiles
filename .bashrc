@@ -28,3 +28,7 @@ eval "$(starship init bash)"
 
 # Deno runtime for JavaScript and TypeScript. 
 . "$HOME/.deno/bin/deno"
+
+# doom emacs 
+. "$HOME/.emacs.d/bin"
+
