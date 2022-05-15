@@ -32,3 +32,5 @@ eval "$(starship init bash)"
 # doom emacs 
 . "$HOME/.emacs.d/bin"
 
+# python pip
+. "$HOME/.local/bin"
