@@ -1,0 +1,21 @@
+#!/bin/sh
+#################################################################
+#			GENERAL SETTINGS			#
+#################################################################
+# Golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# Rust Lang
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Python pip
+export PATH=$PATH:$HOME/.local/bin
+
+#################################################################
+#			APPLICATION LAYER			#
+#################################################################
+# Doom Emacs
+export PATH=$PATH:$HOME/.config/emacs/bin
+
+

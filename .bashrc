@@ -1,36 +1,73 @@
-# .bashrc
+#!/bin/sh
+#################################################################
+#                       VARIABLES			 	#
+#################################################################
+CONFIGD=$HOME/.conf.d
+ALIASES=$HOME/.conf.d/aliases
+ENVAR=$HOME/.conf.d/envar
+PATHES=$HOME/.conf.d/pathes
 
+#################################################################
+#			BASHRC DEFAULT				#
+#################################################################
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+case $- in
+    *i*) ;;
+      *) return;;
+esac
 
-alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
 
+# append to the history file, don't overwrite it
+shopt -s histappend
 
-###### ALIASIS 
-# git bare dotfiles
-alias config='/usr/local/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-# ffplay Music and Video Player
-alias mp='for f in *.mp3 ; do ffplay -nodisp -autoexit "$f"; done'
-# open emacs in terminal mode
-alias emacs='emacs -nw'
-# gcc compiler
-alias ggc='gcc -Wall -Wextra -Werror'
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
 
-# random color script 
-colorscript random
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
 
-# starship enable bash
-eval "$(starship init bash)"
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
 
-# Rust Languge Package Manager
-. "$HOME/.cargo/env"
+#################################################################
+#			USER PREFERENCE				#
+#################################################################
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
 
-# Deno runtime for JavaScript and TypeScript. 
-. "$HOME/.deno/bin/deno"
+# Enable color support of ls.
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
 
-# doom emacs 
-. "$HOME/.emacs.d/bin"
+# Custom Confugration Directory
+if [ -n "$CONFIGD" ]; then
+	# Aliases
+	if [ -f $ALIASES ]; then
+    	. $ALIASES
+	fi
 
-# python pip
-. "$HOME/.local/bin"
+	# PATH
+	if [ -f $PATHES ]; then
+    	. $PATHES
+	fi
+
+	# Enaironment Variables
+	if [ -f $ENVAR ]; then
+    	. $ENVAR
+	fi
+fi

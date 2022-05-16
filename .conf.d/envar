@@ -1,0 +1,11 @@
+#!/bin/sh
+#################################################################
+#			ENVAIRONMENT VARIABLES			#
+#################################################################
+# random color script
+#colorscript random
+
+# Starship if not installed via Cargo.
+eval "$(starship init bash)"
+
+
