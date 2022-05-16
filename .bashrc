@@ -61,11 +61,6 @@ if [ -n "$CONFSHELLS" ]; then
     	. $ALIASES
 	fi
 
-	# PATH
-	if [ -f $PATHES ]; then
-    	. $PATHES
-	fi
-
 	# Enaironment Variables
 	if [ -f $ENVAR ]; then
     	. $ENVAR
