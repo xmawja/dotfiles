@@ -1,12 +1,16 @@
 #!/bin/sh
-
+#################################################################
+#                       VARIABLES                               #
+#################################################################
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
+#################################################################
+#                       DEFAULTS                                #
+#################################################################
 # merge in defaults and keymaps
-
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
 
@@ -26,7 +30,6 @@ if [ -f "$usermodmap" ]; then
 fi
 
 # start some nice programs
-
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
   [ -x "$f" ] && . "$f"
@@ -34,11 +37,15 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+#################################################################
+#                       EXECUTED BKGS                           #
+#################################################################
 # picom
 picom &
 # fehbg
 ~/.fehbg &
 # slstatus
 slstatus &
-# win manager
+# window manager
 exec dwm  
+

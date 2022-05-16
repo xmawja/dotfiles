@@ -2,10 +2,10 @@
 #################################################################
 #                       VARIABLES			 	#
 #################################################################
-CONFIGD=$HOME/.conf.d
-ALIASES=$HOME/.conf.d/aliases
-ENVAR=$HOME/.conf.d/envar
-PATHES=$HOME/.conf.d/pathes
+CONFSHELLS=$HOME/.config/shells
+ALIASES=$CONFSHELLS/aliases
+ENVAR=$CONFSHELLS/envar
+PATHES=$CONFSHELLS/pathes
 
 #################################################################
 #			BASHRC DEFAULT				#
@@ -55,7 +55,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Custom Confugration Directory
-if [ -n "$CONFIGD" ]; then
+if [ -n "$CONFSHELLS" ]; then
 	# Aliases
 	if [ -f $ALIASES ]; then
     	. $ALIASES

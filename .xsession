@@ -1,11 +1,15 @@
+#!/bin/sh
+#################################################################
+#                       GENERAL PREFERENCE                      #
+#################################################################
 # UTF-8
-export LANG=en_US.UTF-8
+#export LANG=en_US.UTF-8
 
 # specify location of kshrc
-export ENV=$HOME/.kshrc
+#export ENV=$HOME/.kshrc
 
 # load Xresources file
-xrdb -merge $HOME/.Xresources
+#xrdb -merge $HOME/.Xresources
 
 # set your background color
 #xsetroot -solid dimgray
@@ -24,19 +28,20 @@ xrdb -merge $HOME/.Xresources
 #export VISUAL=emacsclient
 #export EDITOR="$VISUAL"
 
+#################################################################
+#                       EXECUTED BKGS                           #
+#################################################################
 # launch emacs.
 #exec dbus-launch --exit-with-session emacs
 
 # transmission daemon
-transmission-daemon &
+#transmission-daemon &
 # picom compositor
-picom &
+#picom &
 # feh background
-~/.fehbg &
+#~/.fehbg &
 # slstatus bar
-slstatus &
-# dwm status bar script
-#~/.config/suckless/dwm-bar/dwm_bar.sh &
+#slstatus &
 # window manager
-exec dbus-launch --exit-with-session dwm
+#exec dbus-launch --exit-with-session dwm
 
