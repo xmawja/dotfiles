@@ -46,6 +46,10 @@ picom &
 ~/.fehbg &
 # slstatus
 slstatus &
+# pipewirwe
+pipewire &
+pipewire-pulse &
+wireplumber &
 # window manager
 exec dwm  
 
