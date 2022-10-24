@@ -3,7 +3,10 @@
 #                       VARIABLES                               #
 #################################################################
 BASH_DIR=$HOME/.config/shells/bash
-
+CONFIG_DIR=$HOME/.config/shells/conf.d
+ALIASES=$CONFIG_DIR/aliases
+ENVAR=$CONFIG_DIR/envar
+PATHES=$CONFIG_DIR/pathes
 
 #################################################################
 #			GENERAL PREFERENCE                      #
