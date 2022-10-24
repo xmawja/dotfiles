@@ -1,4 +1,5 @@
 #!/bin/sh
 # if u use sudo as a su do priviledg leave it
 # else change sudo to doas 
-sudo openvpn /etc/openvpn/client/client.ovpn
+
+sudo openvpn --config /etc/openvpn/client/client.ovpn > /dev/null 2>&1 
