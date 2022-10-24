@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo openvpn /etc/openvpn/client/client.ovpn
