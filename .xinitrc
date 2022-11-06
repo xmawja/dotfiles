@@ -51,5 +51,5 @@ pipewire &
 pipewire-pulse &
 wireplumber &
 # window manager
-exec dwm  
+exec dwm 
 
