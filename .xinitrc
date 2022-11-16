@@ -50,6 +50,8 @@ slstatus &
 pipewire &
 pipewire-pulse &
 wireplumber &
+# for Gentoo Users
+gentoo-pipewire-launcher &
 # window manager
-exec dwm 
+exec awesome 
 
