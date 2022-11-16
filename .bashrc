@@ -65,6 +65,11 @@ if [ -n "$CONFIG_DIR" ]; then
 	if [ -f $ENVAR ]; then
     		. $ENVAR
 	fi
-fi
+	
+	# PATHES 
+	if [ -f $PATHES ]; then
+		. $PATHES
+	fi
 
+fi
 
