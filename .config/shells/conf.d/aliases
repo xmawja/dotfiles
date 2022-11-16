@@ -6,7 +6,7 @@
 alias ggc='gcc -Wall -Wextra -Werror'
 
 # git bare dotfiles
-alias config='/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # ls colors and aliases
 alias ls='ls --color=auto'
