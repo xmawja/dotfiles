@@ -48,10 +48,10 @@ picom &
 slstatus &
 # pipewirwe
 pipewire &
-pipewire-pulse &
+#pipewire-pulse &
 wireplumber &
 # for Gentoo Users
 gentoo-pipewire-launcher &
-# window manager
-exec awesome 
+# window manager 
+exec dbus-launch --sh-syntax --exit-with-session awesome
 
