@@ -20,3 +20,7 @@ set iclower
 set searchincr
 " print helpful messages (eg, 4 lines yanked)
 set report=1
+"  filetype settings
+filetype plugin on
+filetype indent on
+
