@@ -45,7 +45,8 @@ picom &
 # fehbg
 ~/.fehbg &
 # slstatus
-slstatus &
+#slstatus &
+dwmblocks &
 # pipewirwe
 pipewire &
 #pipewire-pulse &
@@ -53,5 +54,5 @@ wireplumber &
 # for Gentoo Users
 gentoo-pipewire-launcher &
 # window manager 
-exec dbus-launch --sh-syntax --exit-with-session awesome
+exec dbus-launch --sh-syntax --exit-with-session dwm
 
