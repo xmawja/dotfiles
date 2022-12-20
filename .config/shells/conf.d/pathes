@@ -11,6 +11,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Python pip
 export PATH=$PATH:$HOME/.local/bin
+# pyenv  
+export PATH="$HOME/.pyenv/bin:$PATH"
 
 #################################################################
 #			APPLICATION LAYER			#
