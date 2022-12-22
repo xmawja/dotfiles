@@ -14,6 +14,9 @@ export PATH=$PATH:$HOME/.local/bin
 # pyenv  
 export PATH="$HOME/.pyenv/bin:$PATH"
 
+# ziglang
+export PATH="$HOME/.zig:$PATH"
+
 #################################################################
 #			APPLICATION LAYER			#
 #################################################################
