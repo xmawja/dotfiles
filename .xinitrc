@@ -52,7 +52,7 @@ pipewire &
 #pipewire-pulse &
 wireplumber &
 # for Gentoo Users
-gentoo-pipewire-launcher &
+exec gentoo-pipewire-launcher &
 # window manager 
 exec dbus-launch --sh-syntax --exit-with-session dwm
 
