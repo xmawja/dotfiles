@@ -47,12 +47,15 @@ picom &
 # slstatus
 #slstatus &
 dwmblocks &
-# pipewirwe
+# pipewire
+# Reap any existing daemons and only then try to start a new set.
+pkill -u "${USER}" -x pipewire\|wireplumber 1>/dev/null 2>&1
+# pipewire 
 pipewire &
 #pipewire-pulse &
 wireplumber &
 # for Gentoo Users
-exec gentoo-pipewire-launcher &
+gentoo-pipewire-launcher &
 # window manager 
-exec dbus-launch --sh-syntax --exit-with-session dwm
+exec dbus-launch --sh-syntax --exit-with-session Hyprland
 
