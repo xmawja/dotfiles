@@ -2,6 +2,10 @@
 #################################################################
 #			ENVAIRONMENT VARIABLES			#
 #################################################################
+# Ensure XDG_RUNTIME_DIR is set
+unset XDG_RUNTIME_DIR
+export XDG_RUNTIME_DIR=$(mktemp -d /tmp/$(id -u)-runtime-dir.XXX)
+
 # random color script
 #colorscript random
 
