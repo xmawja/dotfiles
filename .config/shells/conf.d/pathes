@@ -24,3 +24,6 @@ export PATH="$HOME/.zig:$PATH"
 export PATH=$PATH:$HOME/.config/emacs/bin
 
 
+# Starship config
+export STARSHIP_CONFIG=~/.config/starship/conf.d/starship.toml
+
