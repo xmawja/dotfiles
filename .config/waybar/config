@@ -11,7 +11,7 @@
     // Choose the order of the modules
     "modules-left": ["wlr/workspaces"], // "wlr/mode", "wlr/scratchpad", "custom/media"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["mpd", "idle_inhibitor", "pipewire", "custom/weather", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "hyprland/language", "clock", "tray"],
+    "modules-right": ["mpd", "idle_inhibitor", "tray", "pipewire", "custom/weather", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "hyprland/language", "clock"],
     // Modules configuration
     "wlr/workspaces": {
     	 "on-click": "activate",
