@@ -12,29 +12,29 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 #################################################################
 # merge in defaults and keymaps
 if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
+	xrdb -merge $sysresources
 
 fi
 
 if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
+	xmodmap $sysmodmap
 fi
 
 if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
+	xrdb -merge "$userresources"
 
 fi
 
 if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
+	xmodmap "$usermodmap"
 fi
 
 # start some nice programs
-if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-  [ -x "$f" ] && . "$f"
- done
- unset f
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+	for f in /etc/X11/xinit/xinitrc.d/?*.sh; do
+		[ -x "$f" ] && . "$f"
+	done
+	unset f
 fi
 
 #################################################################
@@ -50,12 +50,15 @@ dwmblocks &
 # pipewire
 # Reap any existing daemons and only then try to start a new set.
 pkill -u "${USER}" -x pipewire\|wireplumber 1>/dev/null 2>&1
-# pipewire 
+# pipewire
 pipewire &
 #pipewire-pulse &
 wireplumber &
 # for Gentoo Users
 gentoo-pipewire-launcher &
-# window manager 
-exec dbus-launch --sh-syntax --exit-with-session Hyprland
-
+# xorg window manager
+#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session Hyprland
+# wyaland window manager
+if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+	dbus-run-session Hyprland
+fi
