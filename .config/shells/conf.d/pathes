@@ -2,6 +2,10 @@
 #################################################################
 #			GENERAL SETTINGS			#
 #################################################################
+# Wayland platform by default
+export QT_QPA_PLATFORM=wayland
+export QT_STYLE_OVERRIDE=adwaita-dark
+
 # Golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
@@ -11,7 +15,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Python pip
 export PATH=$PATH:$HOME/.local/bin
-# pyenv  
+# pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 
 # ziglang
@@ -23,7 +27,5 @@ export PATH="$HOME/.zig:$PATH"
 # Doom Emacs
 export PATH=$PATH:$HOME/.config/emacs/bin
 
-
 # Starship config
 export STARSHIP_CONFIG=~/.config/starship/conf.d/starship.toml
-
