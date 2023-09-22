@@ -16,6 +16,12 @@ alias la='ls -la'
 alias lA='ls -A'
 alias l='ls -CF'
 
+# Vim
+alias v='nvim'
+
+# networking
+alias ip='ip -c'
+
 # dir colors
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
