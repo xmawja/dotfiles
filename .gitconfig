@@ -6,6 +6,7 @@
 
 [core]
     pager = delta
+	excludesfile = /home/xmawja/.gitignore_global
 
 [interactive]
     diffFilter = delta --color-only
@@ -20,3 +21,7 @@
 [diff]
     colorMoved = default
 
+[alias]
+	ignore = "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi"
+[github]
+	user = xmawja
