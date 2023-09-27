@@ -36,5 +36,5 @@ alias egrep='egrep --color=auto'
 # ffplay Music and Video Player
 alias mp='for f in *.mp3 ; do ffplay -nodisp -autoexit "$f"; done'
 # open emacs in terminal mode
-alias emacs='emacs -nw'
+alias et='emacs -nw'
 
