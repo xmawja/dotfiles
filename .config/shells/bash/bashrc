@@ -67,4 +67,7 @@ if [ -n "$CONFIG_DIR" ]; then
 	fi
 fi
 
+# emacs gitignore
+function gi { curl https://www.toptal.com/developers/gitignore/api/"$(IFS=, ; echo "$*")"; }
+
 
