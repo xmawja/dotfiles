@@ -45,8 +45,21 @@
 <!---------------------------------------------- HOW TO USE -------------------------------------------->
 ## How To Use
 
-* Work In Progress (WIP)
+### Quick Start
 
+
+1. Define the alias in the current shell scope:
+```shell
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+```
+2. Clone the repository into your [`.cfg`](docs/install.md) directory,
+```shell
+git clone --bare https://github.com/xmawja/dotfiles.git $HOME/.cfg
+```
+3. Checkout the actual content from the bare repository to your $HOME:
+```shell
+config checkout
+```
 <!---------------------------------------------- DOWNLOADS -------------------------------------------->
 ## Download
 
