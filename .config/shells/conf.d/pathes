@@ -41,3 +41,8 @@ export PATH="$PATH:`pwd`/flutter/bin"
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 export CHROME_EXECUTABLE
 
+# Bun a JavaScript runtime, bundler
+# bun completions
+# bun 
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
