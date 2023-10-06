@@ -29,3 +29,12 @@ export PATH=$PATH:$HOME/.config/emacs/bin
 
 # Starship config
 export STARSHIP_CONFIG=~/.config/starship/conf.d/starship.toml
+
+# Android Studio
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+  
+# Flutter 
+export PATH="/opt/flutter/bin:$PATH"
+export PATH="$PATH:`pwd`/flutter/bin"
+

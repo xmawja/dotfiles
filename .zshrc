@@ -24,6 +24,7 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
   
 # Flutter 
+export PATH="/opt/flutter/bin:$PATH"
 export PATH="$PATH:`pwd`/flutter/bin"
 
 # Set name of the theme to load --- if set to "random", it will
