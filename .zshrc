@@ -26,6 +26,9 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/plat
 # Flutter 
 export PATH="/opt/flutter/bin:$PATH"
 export PATH="$PATH:`pwd`/flutter/bin"
+# google chrome archlinux
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+export CHROME_EXECUTABLE
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
