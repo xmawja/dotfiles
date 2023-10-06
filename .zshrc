@@ -19,6 +19,13 @@ source ~/Repos/znap/znap.zsh  # Start Znap
 export ZSH="$HOME/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=13
 
+# Android Studio
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+  
+# Flutter 
+export PATH="$PATH:`pwd`/flutter/bin"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
